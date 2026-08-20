@@ -20,7 +20,7 @@ class PostViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
-i
+
 
 class CommentViewSet(viewsets.ModelViewSet):
     serializer_class = CommentSerializer
